@@ -1,0 +1,45 @@
+@charset "utf-8";
+body 
+{
+    background: lightgray;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+
+main 
+{
+    width: 80%;
+    max-width: 800px;
+    background: beige;
+    padding: 5px;
+}
+
+article 
+{
+    background: white;
+    padding: 5px;
+}
+
+section 
+{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+}
+
+h2 
+{
+    background-color: lightgray;
+}
+
+img 
+{
+    width: 100%;
+}
+
+.hatter 
+{
+    background-color: blanchedalmond;
+}

@@ -1,0 +1,84 @@
+{
+    "temahet": 
+    [
+        {
+            "kerdesek": 
+            [
+                {"kerdes": "1. Található-e Magyarországon (műanyag) csomagolás mentes bolt?",
+                    "v1": "Helyes válasz: Igen, van",
+                    "v2": " - Magyaroszágon nincs, de külföldön van",
+                    "v3": " - Magyaroszágon és külföldön sincs"},
+
+                {"kerdes": "2. Hogyan dobjuk a szelektívbe a műanyagot?",
+                    "v1": "Helyes válasz: tisztán, kimosva",
+                    "v2": " - koszosan",
+                    "v3": " - mindegy"},
+
+                {"kerdes": "3. Ha bővíteni akarod a ruhatárad és mindegy milyen márkájú akkor...",
+                    "v1": "Helyes válasz: turkálókban vásárolok",
+                    "v2": " - Online vásárolok",
+                    "v3": " - noname boltokban vásárolok"},
+                    
+                {"kerdes": "4. Mi a legjobb alternatíva a nejlon zacskókra?",
+                    "v1": "Helyes válasz: vászon szatyrok",
+                    "v2": " - papír zacskók",
+                    "v3": " - erősebb műanyagból készült szatyrok"},
+
+                {"kerdes": "5. A felsorolás között mi a legkörnyezetbarátabb közlekedés?",
+                    "v1": "Helyes válasz: séta",
+                    "v2": " - vonat",
+                    "v3": " - autó"},
+
+                {"kerdes": "6. Ha szemetet látsz eldobva...",
+                    "v1": "Helyes válasz: felveszem és kidobom a legközelebb kukába",
+                    "v2": " - ott hagyom",
+                    "v3": " - belerúgok"},
+
+                {"kerdes": "7. Mi az újrahasznosítás célja?",
+                    "v1": "Helyes válasz: A természetes erőforrások lehető legkevesebb felhasználása.",
+                    "v2": " - kevesebb szemét legyen",
+                    "v3": " - mert jól hangzik"},
+
+                {"kerdes": "8. Mi kerülhet a papír szelektívbe?",
+                    "v1": "Helyes válasz: újságok, tejes -gyümölcsleves papírdobozok, könyvek",
+                    "v2": " - hőpapír (nyugta, blokk)",
+                    "v3": " - olajjal/zsíradékkal szennyezett papír"},
+
+                {"kerdes": "9. Mi a komposzt?",
+                    "v1": "Helyes válasz: szerves anyagok lebomlásának a végterméke",
+                    "v2": " - szerves és szervetlen anyagok lebomlásának a végterméke",
+                    "v3": " - szervetlen anyagok lebomlásának a végterméke"},
+
+                {"kerdes": "1. Miket komposztálhatunk?",
+                    "v1": "Helyes válasz: zöldség - gyümölcs maradék, tojáshéj",
+                    "v2": " - nagy ágak, fatörzsek, diófalevér",
+                    "v3": " - fém, műanyag, vegyszeres dolgok"},
+
+                {"kerdes": "11. Vásárlásnál",
+                    "v1": "Helyes válasz: figyelembe veszem, hogy milyen a csomagolása",
+                    "v2": " - nem törödök, hogy milyen a csomagolása",
+                    "v3": " - nem érdekel, hogy milyen a csomagolása"},
+
+                {"kerdes": "12. Ha elmegyek a boltba.....",
+                    "v1": "Helyes válasz: csak azt veszem meg amire szükségem van",
+                    "v2": " - mindent megveszek, amit a szemem kíván",
+                    "v3": " - felvásárolom az egész LIDL-t"},
+
+                {"kerdes": "13. Mi  a szürkevíz?",
+                    "v1": "Helyes válasz: olyan szennyezett víz amelyben, szappan vagy mosószer maradványok, kisebb nagyobb szennyeződések vannak.",
+                    "v2": " - szürke színű víz",
+                    "v3": " - javarészt a vécékben kepződik, olyan  szennyezett vízet értünk alatta, amiben fertőző, egészségre és környezetre veszélyes baktériumok vannak"},
+                    
+                {"kerdes": "14. Mi a feketevíz?",
+                    "v1": "Helyes válasz: javarészt a vécékben kepződik, olyan szennyezett vízet értünk alatta, amiben fertőző, egészségre és környezetre veszélyes baktériumok vannak",
+                    "v2": " - olyan szennyezett víz amelyben, szappan vagy mosószer maradványok, kisebb nagyobb szennyeződések vannak.",
+                    "v3": " - feket színű víz"},
+                    
+                {"kerdes": "15. Az okostelefont...",
+                    "v1": "Helyes válasz: csak 2-3 évente cserélem",
+                    "v2": " - évente cserélem",
+                    "v3": " -  amikor van egy jobb akkor azt rögtön megveszem"}                    
+            ]
+        }
+    ]
+}
