@@ -1,0 +1,64 @@
+{
+    "galeria":
+    [
+        {
+            "mappa":"/kepek/feherszebasztian",
+            "file":"/_MG_9393.jpg",
+            "fotos":"Fehér Szebasztián"
+        }
+        ,
+        {
+            "mappa":"/kepek/feherszebasztian",
+            "file":"/_MG_9394.jpg",
+            "fotos":"Fehér Szebasztián"
+        }
+        ,
+        {
+            "mappa":"/kepek/feherszebasztian",
+            "file":"/_MG_9395.jpg",
+            "fotos":"Fehér Szebasztián"
+        }
+        ,
+        {
+            "mappa":"/kepek/feherszebasztian",
+            "file":"/_MG_9396.jpg",
+            "fotos":"Fehér Szebasztián"
+        }
+        ,
+        {
+            "mappa":"/kepek/feherszebasztian",
+            "file":"/_MG_9397.jpg",
+            "fotos":"Fehér Szebasztián"
+        }
+        ,
+        {
+            "mappa":"/kepek/gallregina",
+            "file":"/1.jpg",
+            "fotos":"Gáll Regina"
+        }
+        ,
+        {
+            "mappa":"/kepek/gallregina",
+            "file":"/2.jpg",
+            "fotos":"Gáll Regina"
+        }
+        ,
+        {
+            "mappa":"/kepek/gallregina",
+            "file":"/3.jpg",
+            "fotos":"Gáll Regina"
+        }
+        ,
+        {
+            "mappa":"/kepek/gallregina",
+            "file":"/4.jpg",
+            "fotos":"Gáll Regina"
+        }
+        ,
+        {
+            "mappa":"/kepek/gallregina",
+            "file":"/5.jpg",
+            "fotos":"Gáll Regina"
+        }
+    ]
+}

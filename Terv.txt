@@ -1,0 +1,7 @@
+1. JSON, beolvasás
+2. Konkrét adatokkal, szépen jelennek meg az adatok
+	- működik a teszt kiértékelése
+	- működik a galéria léptetés
+	- cikkválasztás
+	- játék
+3. Összeáll az egész weboldal

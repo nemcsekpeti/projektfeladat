@@ -1,84 +1,58 @@
-const receptek = [];
-$(function () {
+window.addEventListener('load', init)
+function $(elem) {
+  return document.querySelectorAll(elem)
+}
+function ID(elem) {
+  return document.getElementById(elem);
+}
+function CLASS(elem) {
+  return document.getElementsByClassName(elem);
+}
 
-  let sorID = 0; //itt tárolom,hogy melyik kép van éppen soron
-  //Ajax hívás és az adatok kiírása táblázatban
-  let fajlnev="temahet.json";
-  beolvas(fajlnev, temahet);
+function init() {
+  fetch("kerdesek.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data.kerdesek)
+      feldolgoz(data.kerdesek)
+    })
+  fetch("cikk.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data.cikkek)
+      feldolgoz2(data.cikkek)
+    })
+}
+function feldolgoz(kerdesek) {
+  var txt = ''
+  kerdesek.forEach(function (kerdes) {
 
-  //A tr tag-ekre rátesszük a kattintás eseménykezelőt
+    txt += '<ul>'
+    for (const key in kerdes) {
+      txt += `<li><span>${key}:</span><span> ${kerdes[key]}</span></li>`
 
-  function beolvas(fajlnev, tomb) {
-    $.ajax({
-      url: fajlnev,
-      success: function (result) {
-        tomb = result.temahet;
-        ajaxtablazat(tomb);
-      },
-    });
-  }
-
-  function ajaxtablazat(tomb) {
-    /*táblázat létrehozása*/
-    console.log(tomb);
-    $("article").append("<table>");
-
-    var txt =
-      "<tr id='fejlec'><th>Név</th><th>Elkészítési idő</th><th>Kép</th><th>leírás</th><th>Hozzávalók</th></tr>";
-      tomb.forEach(function(value, index){
-        txt += "<tr id='" + index + "'>";
-        for (let item in value) {
-          txt += "<td>" + value[item] + "</td>";
-        }
-        txt += "</tr>";
-      });
-    $("article table").html(txt);
-    $("tr").on("click",  etelKivalasztas);
-    $("tr").hover(function () {
-      $(this).toggleClass("hatter");
-    });
-  }
-
-  function etelKivalasztas() {
-    if ($(this).attr("id") === "fejlec") {
-      rendezes();
-    } else {
-        console.log(receptek);
-      sorID = Number($(this).attr("id"));
-      console.log(sorID);
-      console.log(receptek[sorID]);
-      megjelenit();
-    }
-  }
-
-  function balra() {
-    sorID = sorID - 1;
-    if (sorID < 0) {
-      sorID = receptek.length - 1;
     }
 
-    megjelenit();
-  }
-  function jobbra() {
-    sorID = sorID + 1;
-    if (sorID > receptek.length - 1) {
-      sorID = 0;
+    txt += '</ul>'
+  })
+
+  console.log(txt);
+  CLASS('kerdesek')[0].innerHTML = txt;
+}
+
+function feldolgoz2(cikkek) {
+  var txt2 = ''
+  cikkek.forEach(function (cikk) {
+
+    txt2 += '<ul>'
+    for (const key in cikk) {
+      txt2 += `<li><span>${key}:</span><span> ${cikk[key]}</span></li>`
+      
     }
 
-    megjelenit();
-  }
+    txt2 += '</ul>'
+  })
 
-  function megjelenit() {
-    $("#kep img").attr("src", receptek[sorID].kep);
-  }
-
-  function rendezes() {
-    var mezo = "nev";
-    receptek.sort(function (a, b) {
-      merre = Number(b[mezo] > a[mezo]) - 0.5;
-
-      return merre;
-    });
-    console.log(receptek);
-  }
-});
+  console.log(txt2);
+  CLASS('cikkek')[0].innerHTML = txt2;
+} 
