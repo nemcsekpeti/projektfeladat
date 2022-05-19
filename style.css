@@ -1,22 +1,49 @@
 @charset "utf-8";
+*
+{
+    box-sizing: border-box;
+}
 
 body
 {
-    padding: 0%;
-    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Josefin Slab', serif;
+    display: grid;
+    grid-template-columns:
+        'menu menu menu menu'
+        'bgomb nagykep nagykep jgomb'
+        'bgomb galeria galeria jgomb'
+        'f f f f';
+}
+
+.galeria
+{
+    grid-area: 'galeria';
+    width: 100%;
+    vertical-align: middle;
+}
+
+.nagykep
+{   
+    width: 80%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0%;
+    grid-area: 'nagykep';
 }
 
 article
 {
     background-color: white;
     background: fixed;
-    
 }
 
 footer
 {
-    position: relative;
+    grid-area: f;
+    padding-top: 65%;
     text-align: center;
     font-family: 'Josefin Slab', serif;
     text-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -24,15 +51,13 @@ footer
 
 img
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50px;
+    vertical-align: middle;
+    width: 10%;
 }
 
 button
 {
-    
+
     height: 1000px;
     border: none;
     color: white;
@@ -64,11 +89,13 @@ a
 
 #bal
 {
+    grid-area: bgomb;
     float: left;
 }
 
 #jobb
 {
+    grid-area: jgomb;
     float: right;
 }
 
@@ -88,6 +115,8 @@ a
 
 .topnav 
 {
+    grid-area: menu;
+    top: 0%;
     width: 100%;
     position:fixed;
     background-color: rgb(177, 177, 177);
@@ -97,6 +126,8 @@ a
   
 .topnav a 
 {
+    margin: 0px;
+    position: relative;
     float: left;
     color: white;
     text-align: center;

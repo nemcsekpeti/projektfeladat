@@ -24,45 +24,35 @@ function init()
       .then((data) => 
     {
         megjelenit(data.galeria)
+        fokep(data.galeria)
     })
-    $("#bal")[0].addEventListener('click', bal)
-    $("#jobb")[0].addEventListener('click', jobb)
 }
 
 function megjelenit(galeria)
 {
-    var kepek = '';
-    for (const key in galeria)
-    {
+  var kepek = '';
+  for (const key in galeria)
+  {
     kepek += '<img src="'+galeria[key]['mappa']+galeria[key]['file']+'">';
-    }
-CLASS('galeria')[0].innerHTML = kepek;
+  }
+
+  CLASS('galeria')[0].innerHTML = kepek;
+}
+
+function fokep(galeria)
+{
+  var kep = '';
+  for (let i = 0; i < 1; i++)
+  {
+    kep += '<img src="'+galeria[0]['mappa']+galeria[0]['file']+'">'; 
+  }
+  CLASS('nagykep')[0].innerHTML = kep;
 }
 
 function kattintas(event)
 {
     console.log(event.target.id);
     aktualiskepIndex = event.target.id;
-    console.log(galeria[aktualiskepIndex])
-    megjelenit();
-}
-
-function bal()
-{
-    aktualiskepIndex--;
-    if(aktualiskepIndex<0)
-    {
-        aktualiskepIndex=galeria.length-1;
-    }
-    megjelenit();
-}
-
-function jobb()
-{
-    aktualiskepIndex++;
-    if(aktualiskepIndex>galeria.length-1)
-    {
-        aktualiskepIndex=0;
-    }
+    console.log(kepek[aktualiskepIndex])
     megjelenit();
 }
