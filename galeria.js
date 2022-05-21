@@ -17,6 +17,7 @@ function CLASS(elem)
 
 function init() 
 {
+  let fajl = "galeria.json";
     fetch("galeria.json")
       .then((response) => response.json())
       .then((data) => 
