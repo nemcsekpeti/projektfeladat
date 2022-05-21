@@ -19,6 +19,9 @@ body
 
 .galeria
 {
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
     grid-area: 'galeria';
     width: 100%;
     vertical-align: middle;
@@ -28,22 +31,20 @@ body
 {   
     width: 80%;
     padding-top: 5%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 50%;
+    padding-right: 50%;
     padding-bottom: 0%;
     grid-area: 'nagykep';
 }
 
-article
+main
 {
-    background-color: white;
-    background: fixed;
+    padding: auto;
 }
 
 footer
 {
     grid-area: f;
-    padding-top: 65%;
     text-align: center;
     font-family: 'Josefin Slab', serif;
     text-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -57,8 +58,8 @@ img
 
 button
 {
-
-    height: 1000px;
+    margin-top: 3%;
+    height: 620px;
     border: none;
     color: white;
     background-color: rgb(177, 177, 177);
@@ -67,7 +68,6 @@ button
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     transition-duration: 0.5s;
     cursor: pointer;
     border-radius: 8px;
@@ -152,4 +152,18 @@ a
 .topnav-right 
 {
     float: right;
+}
+
+@media screen and (max-with:600px)
+{
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'menu menu menu menu'
+        'bgomb nagykep nagykep jgomb'
+        'bgomb galeria galeria jgomb'
+        'f f f f';
+        ;
+    }
 }

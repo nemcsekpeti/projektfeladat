@@ -1,0 +1,9 @@
+input[type=submit] {
+    width: 150px;
+    margin: 20px;
+    height: 40px;
+}
+
+h1{
+    margin-left: 30px;
+}

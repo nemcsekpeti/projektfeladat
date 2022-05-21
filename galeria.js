@@ -15,8 +15,6 @@ function CLASS(elem)
   return document.getElementsByClassName(elem);
 }
 
-var aktualiskepIndex = 0;
-
 function init() 
 {
     fetch("galeria.json")
@@ -44,15 +42,7 @@ function fokep(galeria)
   var kep = '';
   for (let i = 0; i < 1; i++)
   {
-    kep += '<img src="'+galeria[0]['mappa']+galeria[0]['file']+'">'; 
+    kep += '<img src="'+galeria['mappa']+galeria['file']+'">';
   }
   CLASS('nagykep')[0].innerHTML = kep;
-}
-
-function kattintas(event)
-{
-    console.log(event.target.id);
-    aktualiskepIndex = event.target.id;
-    console.log(kepek[aktualiskepIndex])
-    megjelenit();
 }
